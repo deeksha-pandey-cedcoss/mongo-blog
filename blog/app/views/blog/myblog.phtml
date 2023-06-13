@@ -73,8 +73,7 @@ session_start();
         echo " <h1 class='blog-title'>" . $value->topic . "</h1>";
         echo "<p class='blog-overview'>" . $value->data . "</p>";
         echo "<a href='/index/fullblog?id=".$value->id."' class='btn dark'>read</a>&nbsp&nbsp";
-      echo "<a href='../Controller/like.php?blog_id=".$value->id."& user_id=".$_COOKIE['login'].
-      " class='btn dark''><i class='fa-solid fa-heart'></i></a>";
+      echo "<i class='fa-solid fa-heart'></i>";
         echo "  <a href='/admin/editblog?id=".$value->id."' class='btn dark'>Edit</a>
           <a href='/admin/deleteblog?id=".$value->id."' class='btn dark'>Delete</a>";
         }
